@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    justify-content: space-evenly;
+    background-color: rgba(4, 50, 96, 0.881);
+}
+
+.navbar {
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-item {
+    padding: 6px;
+
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+    color: whitesmoke;
+}
+
+.nav-item a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.webban {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.left,
+.middle,
+.right {
+    flex: 1;
+}
+
+.middle p {
+    font-size: smaller;
+}
+
+ul.list {
+    list-style-type: square;
+    color: whitesmoke;
+    background-color: rgb(14, 161, 120);
+    height: 40%;
+}
+
+.list li a {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.list li {
+    padding: 15px;
+}
+
+.botban {
+    width: 70%;
+}
+
+footer {
+    background-color: #e8e6e6;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links a,
+.footer-copyright a {
+    text-decoration: none;
+}
+
+.footer-contact,
+.footer-copyright {
+    margin-top: 10px;
+    flex-basis: 100%;
+}
+
+.footer-copyright p {
+    margin: 5px 0;
+}
+
+
+
+
+/* Device = Tablets, Ipads (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+    }
+}
+
+
+/* Device = Tablets, Ipads (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .banner {
+        flex-direction: column;
+    }
+}
+
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+    .banner {
+        flex-direction: column;
+    }
+}
+
+
+/* Device = Most of the Smartphones Mobiles (Portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+    .banner {
+        flex-direction: column;
+    }
+}
